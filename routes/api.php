@@ -46,4 +46,7 @@ Route::group([
     Route::get('/user',[AuthController::class, 'user']);
 });
 
+// routes/web.php or routes/api.php
+
+Route::post('/api/signup', [AuthController::class, 'signup']);
 
