@@ -17,19 +17,18 @@ return [
 
     'paths' => ['api/*', 'sanctum/csrf-cookie'],
 
-    'supportsCredentials' => true,
+    'allowed_methods' => ['*'],
 
-    'allowedOrigins' => ['*'], // Allow specific domains or use '*' for all domains
+    'allowed_origins' => ['*'],
 
     'allowed_origins_patterns' => [],
 
-    'allowedHeaders' => ['*'],
+    'allowed_headers' => ['*'],
 
-    'allowedMethods' => ['*'],
+    'exposed_headers' => [],
 
-    'exposedHeaders' => [],
+    'max_age' => 0,
 
-    'maxAge' => 0,
-
+    'supports_credentials' => false,
 
 ];
