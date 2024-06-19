@@ -50,3 +50,12 @@ Route::group([
 
 Route::post('/api/signup', [AuthController::class, 'signup']);
 
+
+
+Route::middleware('auth:api')->get('/user', function (Request $request) {
+    return $request->user();
+});
+
+Route::get('/example', function () {
+    return response()->json(['message' => 'Hello from Laravel!']);
+});

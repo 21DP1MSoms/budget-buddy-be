@@ -159,6 +159,7 @@ return [
         /*
          * Laravel Framework Service Providers...
          */
+        Barryvdh\Cors\ServiceProvider::class,
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Illuminate\Bus\BusServiceProvider::class,
@@ -185,6 +186,8 @@ return [
         /*
          * Package Service Providers...
          */
+        Laravel\Sanctum\SanctumServiceProvider::class, // Add this line
+        // Laravel\Sail\SailServiceProvider::class, // Uncomment if using Sail
 
         /*
          * Application Service Providers...
@@ -194,8 +197,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
     ],
+
 
     /*
     |--------------------------------------------------------------------------
